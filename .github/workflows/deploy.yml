@@ -19,11 +19,11 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --force
 
       - name: Deploy to Cloudflare Pages
         run: |
-          npm install -g @cloudflare/next-on-pages
+          npm install -g @cloudflare/next-on-pages --force
           npx @cloudflare/next-on-pages
           wrangler pages deploy .vercel/output/static
         env:
