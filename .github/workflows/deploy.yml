@@ -20,8 +20,8 @@ jobs:
 
       - name: Install dependencies
         run: | 
-          npm install --force
-          npm install -g @cloudflare/next-on-pages --force
+          npm install
+          npm install -g @cloudflare/next-on-pages
         working-directory: ./nextjs-dashboard
 
       - name: Deploy to Cloudflare Pages
