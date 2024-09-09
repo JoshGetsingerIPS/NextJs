@@ -2,3 +2,16 @@ name = "nextjs-test"
 compatibility_date = "2024-07-29"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".vercel/output/static"
+
+[vars]
+POSTGRES_URL="postgres://default:1USz9haYBwvc@ep-little-sun-a4seq6i5-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
+POSTGRES_PRISMA_URL="postgres://default:1USz9haYBwvc@ep-little-sun-a4seq6i5-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require&pgbouncer=true&connect_timeout=15"
+POSTGRES_URL_NO_SSL="postgres://default:1USz9haYBwvc@ep-little-sun-a4seq6i5-pooler.us-east-1.aws.neon.tech:5432/verceldb"
+POSTGRES_URL_NON_POOLING="postgres://default:1USz9haYBwvc@ep-little-sun-a4seq6i5.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
+POSTGRES_USER="default"
+POSTGRES_HOST="ep-little-sun-a4seq6i5-pooler.us-east-1.aws.neon.tech"
+POSTGRES_PASSWORD="1USz9haYBwvc"
+POSTGRES_DATABASE="verceldb"
+
+AUTH_SECRET=
+AUTH_URL=http://localhost:3000/api/auth
