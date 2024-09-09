@@ -13,5 +13,4 @@ POSTGRES_HOST="ep-little-sun-a4seq6i5-pooler.us-east-1.aws.neon.tech"
 POSTGRES_PASSWORD="1USz9haYBwvc"
 POSTGRES_DATABASE="verceldb"
 
-AUTH_SECRET=
 AUTH_URL=http://localhost:3000/api/auth
